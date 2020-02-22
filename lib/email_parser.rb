@@ -12,7 +12,7 @@ class EmailAddressParser
   end 
   
    def parse
-     self.splitcollect do |i| i.split(",")
+     self.split.collect do |i| i.split(",")
    end 
    .flatten.uniq
      #binding.pry
